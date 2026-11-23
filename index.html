@@ -17,6 +17,10 @@
         <a href="#topic">נושא מרכזי</a>
         <a href="#contact">יצירת קשר</a>
       </nav>
+      <button id="theme-toggle" class="theme-toggle" type="button" aria-pressed="false">
+        <span aria-hidden="true">🌙</span>
+        <span class="theme-toggle-text">מצב כהה</span>
+      </button>
     </div>
   </header>
 
@@ -55,6 +59,45 @@
       </figure>
     </section>
     <!-- אזור 4: יצירת קשר -->
+    <section id="contact" class="card">
+      <h2>יצירת קשר</h2>
+      <p>אפשר למצוא אותי כאן, או לכתוב לי ישירות דרך הטופס:</p>
+
+      <ul class="contact-links">
+        <li>
+          <a href="https://github.com/hodyash715-droid" target="_blank" rel="noopener noreferrer">
+            פרופיל GitHub ↗
+          </a>
+        </li>
+        <li>
+          <a href="mailto:hodyash715@gmail.com">hodyash715@gmail.com</a>
+        </li>
+      </ul>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="field">
+          <label for="name">שם <span class="req" aria-hidden="true">*</span></label>
+          <input type="text" id="name" name="name" autocomplete="name" required>
+          <p class="error" id="name-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="email">אימייל <span class="req" aria-hidden="true">*</span></label>
+          <input type="email" id="email" name="email" autocomplete="email" required>
+          <p class="error" id="email-error" role="alert"></p>
+        </div>
+
+        <div class="field">
+          <label for="message">הודעה <span class="req" aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <p class="error" id="message-error" role="alert"></p>
+        </div>
+
+        <button type="submit" class="btn">שליחה</button>
+        <p class="form-status" id="form-status" role="status"></p>
+        <p class="form-note">האתר סטטי לחלוטין, ולכן הטופס בודק את השדות ומציג משוב בלבד — ההודעה אינה נשלחת לשרת. למשלוח בפועל אפשר להשתמש בקישור המייל שלמעלה.</p>
+      </form>
+    </section>
   </main>
 
   <footer class="site-footer">
