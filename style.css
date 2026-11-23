@@ -142,3 +142,22 @@ main { padding-top: 32px; }
   .avatar { width: 140px; height: 140px; }
   .hero h1 { font-size: 2rem; }
 }
+
+/* ===== איור הנושא המרכזי ===== */
+.illustration {
+  margin: 24px 0 0;
+}
+
+.illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px;
+}
+
+.illustration figcaption {
+  margin-top: 10px;
+  text-align: center;
+  font-size: .9rem;
+  color: var(--text-muted);
+}
